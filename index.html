@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information System</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            height: 310px;
+            width: 400px;
+        }
+
+        .save,.edit,.delete{
+            background-color: blue;
+            color: white;
+        }
+
+        .table {
+            border: 2px solid blue;
+            height: 250px;
+            width: 650px;
+        }
+        
+
+        .container{
+            background-image: url(https://www.eviaglobal.com/images/task-management-system.jpg);
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        h1,label{
+            color: white;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .table{
+            background-color: rgba(3, 1, 8, 0.76);
+             color: white;
+        }
+        th{
+            color: black;
+        }
+        .editDelete{
+            width:100px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Employee Information</h1>
+        <form action="data.php">
+            <label for="fname">Fname:</label>
+            <input type="text" placeholder="Firstname" id="fname"><br><br>
+
+            <label for="lname">Lname:</label>
+            <input type="text" placeholder="Lastname" id="lname"><br><br>
+
+            <label for="city">City: </label>
+            <input type="text" placeholder="City" id="city"><br><br>
+
+            <label for="phone">Phone: </label>
+            <input type="text" placeholder="phone" id="phone"><br><br>
+
+            <label for="salary">Salary: </label>
+            <input type="text" placeholder="salary" id="salary"><br>
+        </form><br>
+        <div class="button">
+        </div>
+        <button class="save">Save</button>
+    </div>
+    <br><br>
+    <div class="table">
+        <table>
+            <caption>
+                <h3>Emp Data</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th>
+                        Fname
+                    </th>
+                    <th>
+                        Lname
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>Phone</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <td>xyz</td>
+                    <td>abc</td>
+                    <td>xyz</td>
+                    <td>123</td>
+                    <td>567</td>
+                    <td class="editDelete">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xyz</td>
+                    <td>abc</td>
+                    <td>xyz</td>
+                    <td>123</td>
+                    <td>567</td>
+                    <td class="editDelete">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xyz</td>
+                    <td>abc</td>
+                    <td>xyz</td>
+                    <td>123</td>
+                    <td>567</td>
+                    <td class="editDelete">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+            </thead>
+    </div>
+</body>
+
+</html>
